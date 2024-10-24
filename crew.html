@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400&display=swap" rel="stylesheet">
+    <title>Worthington | ورثينجتون</title>
+    <style>
+        .copyright {
+    text-align: center;
+    margin: 40px 0 0;
+    font-size: 14px;
+    color: #ffffffbe;
+    direction: ltr;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #09122a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        header {
+            background-color: #00000087;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 5px 0;
+            max-width: 1200px;
+            margin: 20px auto 0;
+            height: 60px;
+        }
+    
+        .separator {
+            width: 100%;
+            max-width: 1200px;
+            height: 1px;
+            background-color: #ffffffb2;
+            margin: 0 auto;
+            position: relative;
+        }
+    
+        .logo img {
+            width: 80px;
+            height: auto;
+        }
+    
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+    
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+    
+        nav ul li {
+            list-style: none;
+            margin: 0 10px;
+        }
+    
+        nav ul li a {
+            font-family: 'Almarai', sans-serif; 
+            text-decoration: none;
+            color: #ffffff9f;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: .3s;
+            direction: ltr;
+        }
+    
+        nav ul li a:hover {
+            color: white;
+        }
+    
+        .menu-toggle {
+            display: none; 
+            font-size: 28px;
+            color: #ffffff;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    
+        .top-persons {
+            display: flex; 
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        h3 {
+            font-size: 14px;
+            color: #a3a3a3;
+        }
+    
+        p {
+            color: white;
+        }
+    
+        .person {
+            user-select: none;
+            background-color: #00000087;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 170px;
+            text-align: center;
+        }
+    
+        .person img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    
+        .row {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    
+        .person:hover, #top-person:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 25px #00d8a3;
+        }
+    
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 15px;
+            }
+    
+            .logo img {
+                width: 60px;
+            }
+    
+            .menu-toggle {
+                display: block;
+            }
+    
+            nav {
+                display: none;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #00000087;
+            }
+    
+            nav.active {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+    
+            nav.active ul {
+                margin-top: 10px;
+            }
+    
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                padding: 0;
+            }
+    
+            nav ul li {
+                margin: 10px 0;
+            }
+    
+            .top-persons, .row {
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .person {
+                width: 90%;
+                margin: 10px 0;
+            }
+    
+            .person img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="menu-toggle">&#9776;</div>
+        <nav>
+            <ul>
+                <li><a href="main.html">الرئيسية</a></li>
+                <li><a href="main.html">إحصائيات العائلة</a></li>
+                <li><a href="story.html">القصة والطاقم</a></li>
+                <li><a href="rules.html">قوانين العائلة</a></li>
+                <li><a href="crew.html">طاقم العائلة</a></li>
+                <li><a href="servers.html">السيرفرات</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="separator"></div>
+    <div class="container">
+        <div class="top-persons">
+            <div class="person" id="top-person">
+                <img src="w.85.png">
+                <h3>ياسمين</h3>
+                <p>مالكة العائلة</p>
+            </div>
+            <div class="person" id="top-person">
+                <img src="i600q.png" alt="شخص">
+                <h3>ريو</h3>
+                <p>المبرمج</p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="person">
+                <img src="c.lb.png">
+                <h3>أنور</h3>
+                <p>مؤسس العائلة</p>
+            </div>
+            <div class="person">
+                <img src="4ju0.png" alt="شخص">
+                <h3>ياسر</h3>
+                <p>نائب المؤسس</p>
+            </div>
+            <div class="person">
+                <img src="Images/Crew/elhessouni.png" alt="شخص">
+                <h3>هيجس</h3>
+                <p>المصمم</p>            
+            </div>
+            <div class="person">
+                <img src="0wde.png" alt="شخص">
+                <h3>أرنولد</h3>
+                <p>إداري عالي</p>
+            </div>
+            <div class="person">
+                <img src="v.21o.png" alt="شخص">
+                <h3>مارك</h3>
+                <p>إداري عالي</p>
+            </div>
+            <div class="person">
+                <img src="daniel_volkov.png" alt="شخص">
+                <h3>جون</h3>
+                <p>إداري عالي</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+    <p class="copyright">© 2024 Worthington Copyrights - Developed by iDrone</p>
+
+</body>
+</html>
